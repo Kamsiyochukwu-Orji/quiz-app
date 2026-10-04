@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App in Javascript</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./questions/script.js" type="module" defer></script>
+  </head>
+  <body>
+    <div class="config-container">
+      <h2 class="config-title">Quiz Configuration</h2>
+      <div class="config-option">
+        <h4 class="option-title">Select Category</h4>
+        <div class="category-options">
+          <button class="category-option active">Programming</button>
+          <button class="category-option">Geography</button>
+          <button class="category-option">Mathematics</button>
+          <button class="category-option">Entertainment</button>
+        </div>
+      </div>
+      <div class="config-option">
+        <h4 class="option-title">No. of Questions</h4>
+        <div class="category-options">
+          <button class="question-option active">5</button>
+          <button class="question-option">10</button>
+          <button class="question-option">15</button>
+          <button class="question-option">20</button>
+          <button class="question-option">25</button>
+        </div>
+      </div>
+      <button class="start-quiz-btn">Start Quiz</button>
+    </div>
+
+    <!-- Quiz Container -->
+    <div class="quiz-container">
+      <header class="quiz-header">
+        <h2 class="quiz-title">Quiz Application</h2>
+        <div class="quiz-timer">
+          <i class="fa-solid fa-stopwatch"></i>
+          <p class="time-duration">15s</p>
+        </div>
+      </header>
+      <div class="quiz-content">
+        <h1 class="question-text"></h1>
+        <ul class="answer-options"></ul>
+      </div>
+      <div class="quiz-footer">
+        <p class="question-status"></p>
+        <button class="next-question-btn">
+          Next
+          <i class="fa-solid fa-arrow-right-long"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="result-container">
+      <img src="icons8-confetti-96.png" alt="" class="result-img" />
+      <h2 class="result-title">Quiz Completed</h2>
+      <p class="result-message"></p>
+      <button class="try-again-btn">Try Again</button>
+    </div>
+  </body>
+</html>
